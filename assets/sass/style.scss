@@ -1,0 +1,35 @@
+$font-stack: "Lato", sans-serif;
+$text-color: #fff;
+$title-color: #353738;
+$body-color: #848789;
+
+$primary-color: #005A8F;
+
+/* 
+
+RESET BROWSER CONFIGURATIONS
+
+*/
+@import 'reset';
+
+
+/*-------------------------*/
+
+/*
+
+START CUSTOM CSS
+
+*/
+
+body {
+	font: 100% $font-stack;
+}
+
+nav {
+	
+}
+
+nav img {
+	height: 50px;
+	width: 50px
+}
