@@ -58,19 +58,27 @@ body {
 nav {
   border-radius: 0px; }
 
-nav img {
+.navbar-brand img, .nav > li > a > img {
   height: 40px; }
 
+.logo-right {
+  margin-right: 8.33% !important; }
+
+.logo-left {
+  margin-left: 8.33% !important; }
+
 .navbar-default {
+  height: 30px;
   background-color: #005A8F;
   border-color: #005A8F;
   margin-bottom: 0px; }
   .navbar-default .navbar-brand {
-    color: #005A8F; }
+    color: #005A8F;
+    padding: 5px 0px; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: #005A8F; }
   .navbar-default .navbar-header {
-    height: 50px; }
+    float: none; }
   .navbar-default .navbar-text {
     color: #005A8F; }
   .navbar-default .navbar-nav > li > a {
@@ -108,9 +116,10 @@ nav img {
 #hero {
   background: url("../brand/images/HeroImage.jpg");
   height: 300px;
+  margin-top: -53px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  /*box-shadow: 3px 3px 3px #333;*/ }
+  box-shadow: 0px 0px 25px #333; }
 
 /*# sourceMappingURL=style.css.map */

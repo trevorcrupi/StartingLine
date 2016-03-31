@@ -7,6 +7,8 @@ $bgHighlight    : #005A8F;
 $colDefault     : #005A8F;
 $colHighlight   : #005A8F;
 
+$col-md-1       : 8.33%;
+$col-md-2       : 16.66%;
 /* 
 
 RESET BROWSER CONFIGURATIONS
@@ -31,11 +33,20 @@ nav {
 	border-radius: 0px;
 }
 
-nav img {
+.navbar-brand img, .nav > li > a > img {
 	height: 40px;
 }
 
+.logo-right {
+	margin-right: $col-md-1 !important;
+}
+
+.logo-left {
+	margin-left: $col-md-1 !important;
+}
+
 .navbar-default {
+  height: 30px;
   background-color: $bgDefault;
   border-color: $bgHighlight;
   margin-bottom: 0px;
@@ -44,9 +55,10 @@ nav img {
     &:hover, &:focus { 
       color: $colHighlight; 
    	}
+  	padding: 5px 0px;
   }
-  .navbar-header {
-  	height: 50px;
+  .navbar-header { 
+  	float: none;
   }
   .navbar-text {
     color: $colDefault; }
@@ -92,8 +104,9 @@ nav img {
 #hero {
 	background: url('../brand/images/HeroImage.jpg');
 	height: 300px;
+	margin-top: -53px;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/*box-shadow: 3px 3px 3px #333;*/
+	box-shadow: 0px 0px 25px #333;
 }
