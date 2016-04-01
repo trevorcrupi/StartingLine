@@ -12,40 +12,91 @@ $col-md-1       : 8.33%;
 $col-md-2       : 16.66%;
 $hero-height    : 350px;
 $picture-margin : 53px;
-/* 
+/*--------------------------- 
 
 RESET BROWSER CONFIGURATIONS
 
-*/
+---------------------------*/
 @import 'reset';
 
 
-/*-------------------------*/
+/*-------------------------
 
-/*
+END BROWSER RESET
 
-START CUSTOM CSS
+--------------------------*/
 
-*/
+
+/*--------------------------
+
+GLOBAL CSS SETTINGS
+
+--------------------------*/
 
 body {
 	font: 100% $font-stack;
+	font-size: 16px;
+	color: $body-color;
 }
 
 nav {
 	border-radius: 0px;
 }
 
+h1 {
+	color: $text-color;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 6px #333; 
+	font-family: $font-stack;
+	font-weight: 700;
+}
+
+h2 {
+	color: $title-color;
+	text-transform: uppercase;
+	font-size: 22px;
+	text-align: center;
+	font-weight: 600;
+}
+
+button {
+	font-family: $font-stack;
+	font-weight: 700;
+	font-style: normal;
+	padding: 10px 30px;
+	border: 1px solid $bgDefault;
+	background: $bgDefault;
+	-webkit-transition: all .2s ease-out;
+	   -moz-transition: all .2s ease-out;
+	     -o-transition: all .2s ease-out;
+	        transition: all .2s ease-out;
+	color: $text-color;
+	text-transform: uppercase;
+	margin: 20px 0px;
+}
+
+button:hover {
+	box-shadow: 0px 0px 25px #333; 
+}
+
+/*--------------------------
+
+END GLOBAL CSS SETTINGS
+
+--------------------------*/
+
+
 .navbar-brand img, .nav > li > a > img {
 	height: 2em;
 }
 
 .logo-right {
-	margin-right: $col-md-1 !important;
+	margin-right: $col-md-2 !important;
 }
 
 .logo-left {
-	margin-left: $col-md-1 !important;
+	margin-left: $col-md-2 !important;
 }
 
 .navbar-default {
@@ -148,12 +199,7 @@ nav {
 .hero-image h1 {
 	line-height: $hero-height - $picture-margin;
 	text-align: center;
-	color: $text-color;
-	font-size: 45px;
-	text-transform: uppercase;
-	text-shadow: 0px 0px 6px #333; 
-	font-family: $font-stack;
-	font-weight: 500;
+	letter-spacing: 2px;
 }
 
 /* page specific bg properties using different image sizes  */
@@ -161,3 +207,29 @@ nav {
 #hero-home-md {background:url(../brand/images/HeroImage.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 992px */
 #hero-home-sm {background:url(../brand/images/HeroImage.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 768px */
 #hero-home-xs {background:url(../brand/images/HeroImage.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 320px */
+
+#about {
+	line-height: 2;
+	padding: 20px 0px;
+	/*border-bottom: 5px solid $body-color;*/
+}
+
+#about h2 {
+	letter-spacing: 2px;
+}
+
+#about p {
+	padding-top: 15px;
+}
+
+#about ul {
+	padding-left: 75px;
+}
+
+.partner-images {
+	padding: 25px 0px;
+}
+
+#partners {
+	padding: 25px 0px;
+}

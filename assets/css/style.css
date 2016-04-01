@@ -1,8 +1,8 @@
-/* 
+/*--------------------------- 
 
 RESET BROWSER CONFIGURATIONS
 
-*/
+---------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,7 +32,7 @@ body {
   line-height: 1; }
 
 ol, ul {
-  list-style: none; }
+  /*list-style: none;*/ }
 
 blockquote, q {
   quotes: none; }
@@ -46,26 +46,70 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*-------------------------*/
-/*
+/*-------------------------
 
-START CUSTOM CSS
+END BROWSER RESET
 
-*/
+--------------------------*/
+/*--------------------------
+
+GLOBAL CSS SETTINGS
+
+--------------------------*/
 body {
-  font: 100% "Lato", sans-serif; }
+  font: 100% "Lato", sans-serif;
+  font-size: 16px;
+  color: #848789; }
 
 nav {
   border-radius: 0px; }
 
+h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 6px #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 700; }
+
+h2 {
+  color: #353738;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600; }
+
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 30px;
+  border: 1px solid #005A8F;
+  background: #005A8F;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px 0px; }
+
+button:hover {
+  box-shadow: 0px 0px 25px #333; }
+
+/*--------------------------
+
+END GLOBAL CSS SETTINGS
+
+--------------------------*/
 .navbar-brand img, .nav > li > a > img {
   height: 2em; }
 
 .logo-right {
-  margin-right: 8.33% !important; }
+  margin-right: 16.66% !important; }
 
 .logo-left {
-  margin-left: 8.33% !important; }
+  margin-left: 16.66% !important; }
 
 .navbar-default {
   height: 30px;
@@ -155,12 +199,7 @@ nav {
 .hero-image h1 {
   line-height: 297px;
   text-align: center;
-  color: #fff;
-  font-size: 45px;
-  text-transform: uppercase;
-  text-shadow: 0px 0px 6px #333;
-  font-family: "Lato", sans-serif;
-  font-weight: 500; }
+  letter-spacing: 2px; }
 
 /* page specific bg properties using different image sizes  */
 #hero-home-lg {
@@ -191,5 +230,24 @@ nav {
   position: relative; }
 
 /* image 320px */
+#about {
+  line-height: 2;
+  padding: 20px 0px;
+  /*border-bottom: 5px solid $body-color;*/ }
+
+#about h2 {
+  letter-spacing: 2px; }
+
+#about p {
+  padding-top: 15px; }
+
+#about ul {
+  padding-left: 75px; }
+
+.partner-images {
+  padding: 25px 0px; }
+
+#partners {
+  padding: 25px 0px; }
 
 /*# sourceMappingURL=style.css.map */
