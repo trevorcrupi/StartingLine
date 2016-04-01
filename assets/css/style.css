@@ -250,4 +250,31 @@ END GLOBAL CSS SETTINGS
 #partners {
   padding: 25px 0px; }
 
+footer {
+  background: #484848;
+  color: #848789;
+  padding: 30px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px; }
+
+footer a {
+  color: #fff; }
+
+footer a:hover, footer a:visited {
+  color: #fff; }
+
+.small {
+  text-transform: none;
+  font-size: 12px;
+  font-weight: 400; }
+
+@media (max-width: 767px) {
+  #hero-home h1 {
+    line-height: 50px;
+    font-size: 35px;
+    margin-top: 20%; } }
+
 /*# sourceMappingURL=style.css.map */
